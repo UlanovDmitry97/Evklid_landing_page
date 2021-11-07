@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+       url('../fonts/montserrat-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    local("montserrat"),
+    url('../fonts/montserrat-medium.woff2') format('woff2'),
+    url('../fonts/montserrat-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    local("montserrat"),
+    url('../fonts/montserrat-semibold.woff2') format('woff2'),
+    url('../fonts/montserrat-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    local("montserrat"),
+    url('../fonts/montserrat-bold.woff2') format('woff2'),
+    url('../fonts/montserrat-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+  local("montserrat"),
+  url('../fonts/montserrat-extrabold.woff2') format('woff2'),
+  url('../fonts/montserrat-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --text: #333;
+  --interaction-color: #FF9900;
+  --interaction-color-active: #E1670E;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+/* ----------Общие стили----------- */
+.container {
+  padding: 0 75px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 25px 35px;
+  border: none;
+  color: #fff;
+  background-color: #FF9900;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.article-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

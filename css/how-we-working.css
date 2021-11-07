@@ -1,0 +1,366 @@
+:root {
+  --text: #333;
+  --interaction-color: #FF9900;
+  --interaction-color-active: #E1670E;
+}
+
+.how-we-working {
+  margin-bottom: 100px;
+}
+
+.how-we-working__title {
+  margin-bottom: 50px;
+}
+
+.how-we-working__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 46px;
+  gap: 85px;
+}
+
+.how-we-working__step-btn {
+  padding: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--text);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: color .4s ease;
+  -o-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.how-we-working__step-btn_active {
+  color: var(--interaction-color-active);
+}
+
+.how-we-working__step-btn:hover {
+  color: var(--interaction-color);
+}
+
+.how-we-working__step-btn:focus {
+  outline: 2px solid var(--interaction-color);
+}
+
+.how-we-working__step-btn:active {
+  color: var(--interaction-color-active);
+}
+/* ----Блок tab-content---- */
+.tab-content {
+  display: none;
+}
+
+.tab-content_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-content_one::after {
+  content: "";
+  display: block;
+  margin-top: 9px;
+  width: 870px;
+  height: 460px;
+  background-image: url("../img/how-we-working.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tab-content_two::after {
+  content: "";
+  display: block;
+  margin-top: 9px;
+  width: 870px;
+  height: 460px;
+  background-image: url("../img/how-we-working_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tab-content_three::after {
+  content: "";
+  display: block;
+  margin-top: 9px;
+  width: 870px;
+  height: 460px;
+  background-image: url("../img/how-we-working_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tab-content_four::after {
+  content: "";
+  display: block;
+  margin-top: 9px;
+  width: 870px;
+  height: 460px;
+  background-image: url("../img/how-we-working_4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tab-content__title {
+  margin-bottom: 8px;
+}
+
+.tab-content__desc {
+  max-width: 758px;
+  margin-bottom: 48px;
+  margin-right: 142px;
+}
+
+.tab-content__btn_more {
+  padding: 20px 38px;
+  margin-right: 29px;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: background-color .4s ease;
+  -o-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+}
+
+.tab-content__btn_more:hover {
+  background-color: #F7B045;
+}
+
+.tab-content__btn_more:focus {
+  background-color: #F7B045;
+  outline: none;
+}
+
+.tab-content__btn_more:active {
+  background-color: var(--interaction-color-active);
+}
+.tab-content__btn_contract {
+  padding: 20px 37px;
+  background-color: transparent;
+  border: 1px solid var(--text);
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 400;
+  color: var(--text);
+  -webkit-transition-property: background-color, border, color;
+  -o-transition-property: background-color, border, color;
+  transition-property: background-color, border, color;
+  -webkit-transition-duration: .4s;
+       -o-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.tab-content__btn_contract:hover {
+  background-color: #666;
+  border: 1px solid #666;
+  color: #fff;
+}
+
+.tab-content__btn_contract:focus {
+  background-color: #666;
+  border: 1px solid #666;
+  color: #fff;
+}
+
+.tab-content__btn_contract:focus {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+/* ------------------------- */
+
+@media (max-width: 1360px) {
+  .how-we-working {
+    margin-bottom: 82px;
+  }
+
+  .how-we-working__list {
+    margin-bottom: 52px;
+  }
+
+  .tab-content__desc {
+    width: 437px;
+    margin-bottom: 24px;
+    margin-right: 50px;
+  }
+
+  .tab-content_one::after {
+    margin-top: 11px;
+    width: 552px;
+    height: 689px;
+    background-image: url("../img/how-we-working__1024.jpg");
+  }
+
+  .tab-content_two::after {
+    margin-top: 11px;
+    width: 552px;
+    height: 689px;
+    background-image: url("../img/how-we-working_2.jpg");
+    background-position: center center;
+  }
+
+  .tab-content_three::after {
+    margin-top: 11px;
+    width: 552px;
+    height: 689px;
+    background-image: url("../img/how-we-working_3.jpg");
+    background-position: center center;
+  }
+
+  .tab-content_four::after {
+    margin-top: 11px;
+    width: 552px;
+    height: 689px;
+    background-image: url("../img/how-we-working_4.jpg");
+    background-position: center center;
+  }
+}
+
+@media (max-width: 968px) {
+  .tab-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .tab-content_one::after {
+    margin-bottom: 38px;
+    width: 100%;
+    height: 284px;
+    background-image: url("../img/how-we-working__768.jpg");
+    background-size: cover;
+  }
+
+  .tab-content_two::after {
+    margin-bottom: 38px;
+    width: 100%;
+    height: 284px;
+    background-image: url("../img/how-we-working_2.jpg");
+    background-size: cover;
+  }
+
+  .tab-content_three::after {
+    margin-bottom: 38px;
+    width: 100%;
+    height: 284px;
+    background-image: url("../img/how-we-working_3.jpg");
+    background-size: cover;
+  }
+
+  .tab-content_four::after {
+    margin-bottom: 38px;
+    width: 100%;
+    height: 284px;
+    background-image: url("../img/how-we-working_4.jpg");
+    background-size: cover;
+  }
+
+  .how-we-working__title {
+    margin-bottom: 50px;
+  }
+
+  .how-we-working__list {
+    margin-bottom: 38px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+  }
+
+  .tab-content__desc {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-we-working {
+    margin-bottom: 60px;
+  }
+
+  .tab-content_one::after {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 160px;
+    background-image: url("../img/how-we-working__320.jpg");
+    background-size: cover;
+  }
+
+  .tab-content_two::after {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 160px;
+    background-image: url("../img/how-we-working_2.jpg");
+    background-size: cover;
+  }
+
+  .tab-content_three::after {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 160px;
+    background-image: url("../img/how-we-working_3.jpg");
+    background-size: cover;
+  }
+
+  .tab-content_four::after {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 160px;
+    background-image: url("../img/how-we-working_4.jpg");
+    background-size: cover;
+  }
+
+  .how-we-working__title {
+    margin-bottom: 20px;
+  }
+
+  .how-we-working__step-btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how-we-working__list {
+    margin-bottom: 5px;
+  }
+
+  .article-title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .tab-content__desc {
+    margin-bottom: 15px;
+  }
+
+  .tab-content__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .tab-content__btn_more {
+    padding: 13px 44px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 14.5px;
+  }
+
+  .tab-content__btn_contract {
+    padding: 10px 32px;
+    font-size: 12px;
+    line-height: 14.5px;
+  }
+}

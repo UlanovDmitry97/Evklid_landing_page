@@ -1,0 +1,227 @@
+:root {
+  --text: #333;
+  --interaction-color: #FF9900;
+  --interaction-color-active: #E1670E;
+}
+
+.header {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 85px;
+}
+
+.header__search__mobile {
+  display: none;
+}
+
+.nav__link_header {
+  line-height: 22px;
+  color: #333;
+}
+
+.nav__link_header:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--interaction-color);
+}
+
+.nav__link_header:focus {
+  outline: 2px solid var(--interaction-color);
+}
+
+.nav__link_header:active {
+  color: var(--interaction-color-active);
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--interaction-color-active);
+}
+
+.header__search {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__search-icon path, rect {
+  -webkit-transition-property: fill, stroke;
+  -o-transition-property: fill, stroke;
+  transition-property: fill, stroke;
+  -webkit-transition-duration: .4s;
+       -o-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.header__search:hover .header__search-icon rect {
+  fill: var(--interaction-color);
+}
+
+.header__search:hover .header__search-icon path {
+  stroke: var(--interaction-color);
+}
+
+.header__search:focus {
+  outline: 2px solid var(--interaction-color);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 420px;
+  height: 768px;
+  padding-left: 50px;
+  padding-top: 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateX(-101%);
+      -ms-transform: translateX(-101%);
+          transform: translateX(-101%);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.menu_active {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+
+.burger-close {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 100px;
+  background-color: transparent;
+  background-image: url("../img/X.svg");
+  border: 0;
+  cursor: pointer;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.menu__item {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.menu__link {
+  color: #333;
+}
+
+.menu__link:active {
+  color: var(--interaction-color-active);
+}
+
+/* --------Блок nav-------- */
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 85px;
+}
+
+.nav__link {
+  font-weight: 600;
+  font-size: 18px;
+}
+/* ----------------------- */
+
+@media (max-width: 1360px) {
+  /* <----------Секция HEADER----------> */
+  .menu {
+    display: block;
+  }
+
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .burger-menu {
+    display: block;
+    padding: 0;
+    width: 30px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .burger-menu__item {
+    display: block;
+    height: 3px;
+    background-color: var(--text);
+  }
+
+  .burger-menu__item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo {
+    width: 150px;
+    height: 48px;
+    margin: 0;
+  }
+
+  .header__search__mobile {
+    display: block;
+  }
+
+  .header__search {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 968px) {
+  .header__container {
+    height: 69px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo {
+    width: 110px;
+    height: 35px;
+  }
+}
